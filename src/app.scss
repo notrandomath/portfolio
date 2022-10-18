@@ -7,7 +7,8 @@
         background-color: lightsalmon;
         position: relative;
         top: 70px;
-        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth; //makes links to different section cause a smooth scroll instead of instant (also affects snap scroll)
+        scroll-snap-type: y mandatory; //enables snap scrolling
         scrollbar-width: none; //removes scrollbar for firefox
         &::-webkit-scrollbar {
             display: none; //removes scrollbar from other browsers
