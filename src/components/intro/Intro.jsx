@@ -1,9 +1,24 @@
 import './intro.scss'
+import {KeyboardArrowDown} from "@material-ui/icons"
 
 export default function Intro() {
   return (
     <div className="intro" id="intro">
-        Intro
+        <div className="left">
+          <div className="imgContainer">
+            <img src="assets/portrait.png" alt="" />
+          </div>
+        </div>
+        <div className="right">
+          <div className="wrapper">
+            <h2>Hi There, I'm </h2>
+            <h1>Omar Yahia</h1>
+            <h3>UCI<span></span></h3>
+          </div>
+          <a href="#portfolio">
+            <KeyboardArrowDown className="icon"/>
+          </a>
+        </div>
     </div>
   )
 }
