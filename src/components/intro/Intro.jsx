@@ -18,7 +18,7 @@ export default function Intro() {
             <h3>&gt; UCI&nbsp;
             <Typewriter 
               className="typing" 
-              words = {['Hobbyist Programmer', 'CS Student', 'Anteater']} 
+              words = {['Programmer', 'CS Student', 'Anteater']} 
               loop = {0} //for infinite looping
               cursor
             />
