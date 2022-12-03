@@ -1,6 +1,11 @@
+@import "../../global.scss";
+
 .contact{
     background-color: lightblue;
     display: flex;
+    @include mobile{
+        flex-direction: column;
+    }
 
     .left{
         flex: 1;
@@ -8,6 +13,9 @@
 
         img{
             height: 100%;
+        }
+        @include mobile{
+            display: none;
         }
     }
     .right{
@@ -18,6 +26,7 @@
         justify-content: center;
 
         h2{
+            text-align: center;
             font-size: 30px;
         }
 
@@ -38,6 +47,9 @@
             textarea{
                 width: 80%;
                 height: 200px;
+                @include mobile{
+                    height: 400px;
+                }
                 font-size: 14px;
             }
 
