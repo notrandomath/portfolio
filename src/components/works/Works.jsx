@@ -32,7 +32,7 @@ export default function Works() {
       : setCurrentSlide(currentSlide<data.length -1 ?currentSlide+1 : 0);
   }
   return (
-    <div className="works" id = "works">
+    <div className="works" id="works">
         <div className="slider" style={{transform:`translateX(-${currentSlide*100}vw)`}}>
           {data.map(d=>(
           <div className="container">
@@ -55,8 +55,8 @@ export default function Works() {
             </div>
           </div>))}
         </div>
-        <img src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_960_720.png" className="arrow left" alt="" onClick={()=>handleClick("left")}/>
-        <img src="https://cdn.pixabay.com/photo/2016/09/05/10/50/app-1646213_960_720.png" className="arrow right" alt="" onClick={()=>handleClick()}/>
+        <img src="assets/left arrow.png" className="arrow left" alt="" onClick={()=>handleClick("left")}/>
+        <img src="assets/left arrow.png" className="arrow right" alt="" onClick={()=>handleClick()}/>
     </div>
   )
 }
