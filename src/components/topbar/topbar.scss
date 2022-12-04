@@ -30,26 +30,6 @@
                     font-size: 20px;
                 }
             }
-
-            .itemContainer {
-                display: flex;
-                align-items: center;
-                margin-left: 30px;
-
-                @include mobile{
-                    display: none;
-                }
-
-                .icon {
-                    font-size: 15px;
-                    margin-right: 5px;
-                }
-
-                span {
-                    font-size: 15px;
-                    font-weight: 400;
-                }
-            }
         }
         .right {
 
