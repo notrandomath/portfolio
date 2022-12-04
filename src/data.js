@@ -1,5 +1,3 @@
-import { Title } from "@material-ui/icons";
-
 export const featuredPortfolio = [
     {
         id: 1,
