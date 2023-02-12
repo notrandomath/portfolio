@@ -6,24 +6,39 @@ export default function Works() {
     const data = [
        {
         id: "1",
-        icon: "./assets/cpp logo.png",
-        title: "Web Design",
-        desc: "some description",
-        img: "https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png",
+        icon: "https://cdn.pixabay.com/photo/2015/12/03/01/27/play-1073616_1280.png",
+        title: "Omar's Entertainmentopedia",
+        desc: 
+          `A fullstack application with a mySQL database 
+          that stores info about the entertainment that I've consumed as well 
+          as the rating I gave it. The frontend then searches the database
+          as well as adds to it.`,
+        img: "./assets/entertainmentopedia.png",
+        link: "https://omars-entertainmentopedia.yahia.space",
        },
        {
         id: "2",
-        icon: "./assets/cpp logo.png",
-        title: "Web Design 2",
-        desc: "some description",
-        img: "https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png",
+        icon: "https://cdn.pixabay.com/photo/2015/12/03/01/27/play-1073616_1280.png",
+        title: "Omar's Entertainmentopedia",
+        desc: 
+          `A fullstack application with a mySQL database 
+          that stores info about the entertainment that I've consumed as well 
+          as the rating I gave it. The frontend then searches the database
+          as well as adds to it.`,
+        img: "./assets/entertainmentopedia.png",
+        link: "https://omars-entertainmentopedia.yahia.space",
        },
        {
         id: "3",
-        icon: "./assets/cpp logo.png",
-        title: "Web Design 3",
-        desc: "some description",
-        img: "https://cdn.pixabay.com/photo/2018/08/18/13/26/interface-3614766_960_720.png",
+        icon: "https://cdn.pixabay.com/photo/2015/12/03/01/27/play-1073616_1280.png",
+        title: "Omar's Entertainmentopedia",
+        desc: 
+          `A fullstack application with a mySQL database 
+          that stores info about the entertainment that I've consumed as well 
+          as the rating I gave it. The frontend then searches the database
+          as well as adds to it.`,
+        img: "./assets/entertainmentopedia.png",
+        link: "https://omars-entertainmentopedia.yahia.space",
        },
     ]
   const handleClick = (way)=>{
@@ -46,7 +61,7 @@ export default function Works() {
                   <p>
                     {d.desc}
                   </p>
-                  <span>Projects</span>
+                  <p>link: <a href={d.link}>{d.link}</a></p>
                 </div>
               </div>
               <div className="right">
