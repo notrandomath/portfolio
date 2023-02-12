@@ -54,10 +54,12 @@ export default function Works() {
             <div className="item">
               <div className="left">
                 <div className="leftContainer">
-                  <div className="imgContainer">
-                    <img src={d.icon} alt="" />
+                  <div className="heading">
+                    <div className="imgContainer">
+                      <img src={d.icon} alt="" />
+                    </div>
+                    <h2>{d.title}</h2>
                   </div>
-                  <h2>{d.title}</h2>
                   <p>
                     {d.desc}
                   </p>

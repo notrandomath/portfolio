@@ -10,6 +10,9 @@
     .arrow{
         height: 50px;
         position: absolute;
+        @include mobile{
+            top: 90%;
+        }
         cursor: pointer;
 
 
@@ -24,6 +27,9 @@
 
     .slider{
         height: 350px;
+        @include mobile{
+            height: 70%;
+        }
         display: flex;
         position: absolute;
         left: 0;
@@ -41,6 +47,9 @@
                 background-color: white;
                 border-radius: 20px;
                 display: flex;
+                @include mobile{
+                    flex-direction: column;
+                }
                 align-items: center;
                 justify-content: center;
 
@@ -58,23 +67,30 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-
-                        .imgContainer{
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            background-color: coral;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-
-                            img{
-                                width: 25px;
+                        .heading{
+                            @include mobile{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                flex-direction: row;
                             }
-                        }
-                        h2{
-                            font-size: 18px;
-                            
+                            .imgContainer{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                background-color: coral;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+    
+                                img{
+                                    width: 25px;
+                                }
+                            }
+                            h2{
+                                font-size: 18px;
+                                
+                            }
                         }
                         p{
                             font-size: 10px;
@@ -83,7 +99,11 @@
                 }
                 .right{
                     flex: 8;
+                    @include mobile{
+                        flex: 5;
+                    }
                     height: 100%;
+                    width: 100%;
                     background-color: yellow;
                     display: flex;
                     align-items: center;
@@ -93,6 +113,10 @@
                     img{
                         width: 400px;
                         transform: rotate(-10deg);
+                        @include mobile{
+                            width: 80%;
+                            height: auto;
+                        }
                     }
                 }
             }

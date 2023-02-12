@@ -17,15 +17,21 @@
         justify-content: center;
 
         .imgContainer{
-            width: 700px;
-            height: 700px;
+            width: 100%;
+            aspect-ratio: 1/1;
+
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             background-color: lightyellow;
-            
+            @include mobile{
+                width: 700px;;
+                height: 700px;
+            }
+
             img{
+                margin: auto;
                 width: 90%;
                 height: 70%;
                 border-radius: 100%;
