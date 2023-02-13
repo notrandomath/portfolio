@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6e2cbdfb.css",
-    "main.js": "/portfolio/static/js/main.28a82a6f.js",
-    "index.html": "/portfolio/index.html",
-    "main.6e2cbdfb.css.map": "/portfolio/static/css/main.6e2cbdfb.css.map",
-    "main.28a82a6f.js.map": "/portfolio/static/js/main.28a82a6f.js.map"
+    "main.css": "/omars-portfolio.yahia.space/static/css/main.36009a75.css",
+    "main.js": "/omars-portfolio.yahia.space/static/js/main.0bcb544c.js",
+    "index.html": "/omars-portfolio.yahia.space/index.html",
+    "main.36009a75.css.map": "/omars-portfolio.yahia.space/static/css/main.36009a75.css.map",
+    "main.0bcb544c.js.map": "/omars-portfolio.yahia.space/static/js/main.0bcb544c.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e2cbdfb.css",
-    "static/js/main.28a82a6f.js"
+    "static/css/main.36009a75.css",
+    "static/js/main.0bcb544c.js"
   ]
 }
