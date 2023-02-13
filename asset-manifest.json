@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/omars-portfolio.yahia.space/static/css/main.36009a75.css",
-    "main.js": "/omars-portfolio.yahia.space/static/js/main.0bcb544c.js",
-    "index.html": "/omars-portfolio.yahia.space/index.html",
-    "main.36009a75.css.map": "/omars-portfolio.yahia.space/static/css/main.36009a75.css.map",
-    "main.0bcb544c.js.map": "/omars-portfolio.yahia.space/static/js/main.0bcb544c.js.map"
+    "main.css": "/static/css/main.36009a75.css",
+    "main.js": "/static/js/main.0bcb544c.js",
+    "index.html": "/index.html",
+    "main.36009a75.css.map": "/static/css/main.36009a75.css.map",
+    "main.0bcb544c.js.map": "/static/js/main.0bcb544c.js.map"
   },
   "entrypoints": [
     "static/css/main.36009a75.css",
