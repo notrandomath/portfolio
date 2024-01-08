@@ -1,31 +1,31 @@
 import { useEffect, useState } from "react"
 import PortfolioList from "../portfolioList/PortfolioList"
 import "./portfolio.scss"
-import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, contentPortfolio } from "../../data"
+import { featuredPortfolio, aiPortfolio, frontendPortfolio, backendPortfolio, mobilePortfolio, worksData } from "../../data"
 
-export default function Portfolio() {
+export default function Portfolio({currentSlide, setCurrentSlide}) {
     const [selected, setSelected] = useState("featured")
-    const [data, setData] = useState([])
+    const [data, setData] = useState(new Set([]))
   const list = [
     {
       id: "featured",
       title: "Featured",
     },
     {
-      id: "web",
-      title: "Web App",
+      id: "ai",
+      title: "AI",
+    },
+    {
+      id: "frontend",
+      title: "Frontend",
+    },
+    {
+      id: "backend",
+      title: "Backend",
     },
     {
       id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content"
+      title: "Mobile"
     }
   ]
 
@@ -35,17 +35,17 @@ export default function Portfolio() {
       case "featured": 
         setData(featuredPortfolio);
         break;
-      case "web": 
-        setData(webPortfolio);
+      case "ai": 
+        setData(aiPortfolio);
+        break;
+      case "frontend": 
+        setData(frontendPortfolio);
+        break;
+      case "backend": 
+        setData(backendPortfolio);
         break;
       case "mobile": 
         setData(mobilePortfolio);
-        break;
-      case "design": 
-        setData(designPortfolio);
-        break;
-      case "content": 
-        setData(contentPortfolio);
         break;
       default: 
         setData(featuredPortfolio);
@@ -68,8 +68,8 @@ export default function Portfolio() {
           ))}
         </ul>
         <div className="container">
-          {data.map((d)=>(
-            <a href="#works">
+          {worksData.map((d)=>(data.has(parseInt(d.id, 10)) &&
+            <a href="#works" onClick={()=>setCurrentSlide(d.id)}>
               <div className="item">
                   <img src={d.img} alt="" />
                   <h3>{d.title}</h3>

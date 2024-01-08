@@ -1,55 +1,16 @@
-import { useState } from "react"
+import { worksData } from "../../data";
 import "./works.scss"
 
-export default function Works() {
-      const [currentSlide,setCurrentSlide] = useState(0)
-    const data = [
-       {
-        id: "1",
-        icon: "https://cdn.pixabay.com/photo/2015/12/03/01/27/play-1073616_1280.png",
-        title: "Omar's Entertainmentopedia",
-        desc: 
-          `A fullstack application with a mySQL database 
-          that stores info about the entertainment that I've consumed as well 
-          as the rating I gave it. The frontend then searches the database
-          as well as adds to it.`,
-        img: "./assets/entertainmentopedia.png",
-        link: "https://omars-entertainmentopedia.yahia.space",
-       },
-       {
-        id: "2",
-        icon: "https://cdn.pixabay.com/photo/2015/12/03/01/27/play-1073616_1280.png",
-        title: "Omar's Entertainmentopedia",
-        desc: 
-          `A fullstack application with a mySQL database 
-          that stores info about the entertainment that I've consumed as well 
-          as the rating I gave it. The frontend then searches the database
-          as well as adds to it.`,
-        img: "./assets/entertainmentopedia.png",
-        link: "https://omars-entertainmentopedia.yahia.space",
-       },
-       {
-        id: "3",
-        icon: "https://cdn.pixabay.com/photo/2015/12/03/01/27/play-1073616_1280.png",
-        title: "Omar's Entertainmentopedia",
-        desc: 
-          `A fullstack application with a mySQL database 
-          that stores info about the entertainment that I've consumed as well 
-          as the rating I gave it. The frontend then searches the database
-          as well as adds to it.`,
-        img: "./assets/entertainmentopedia.png",
-        link: "https://omars-entertainmentopedia.yahia.space",
-       },
-    ]
+export default function Works({currentSlide, setCurrentSlide}) {
   const handleClick = (way)=>{
     way === "left" 
-      ? setCurrentSlide(currentSlide > 0 ? currentSlide-1: 2) 
-      : setCurrentSlide(currentSlide<data.length -1 ?currentSlide+1 : 0);
+      ? setCurrentSlide(currentSlide > 0 ? currentSlide-1: worksData.length -1) 
+      : setCurrentSlide(currentSlide<worksData.length -1 ?currentSlide+1 : 0);
   }
   return (
     <div className="works" id="works">
         <div className="slider" style={{transform:`translateX(-${currentSlide*100}vw)`}}>
-          {data.map(d=>(
+          {worksData.map(d=>(
           <div className="container">
             <div className="item">
               <div className="left">

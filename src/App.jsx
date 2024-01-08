@@ -10,14 +10,15 @@ import { useState } from "react"
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [currentSlide,setCurrentSlide] = useState(0)
   return (
     <div className="app">
       <Topbar menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
       <Menu menuOpen = {menuOpen} setMenuOpen = {setMenuOpen}/>
       <div className="sections">
         <Intro/>
-        <Portfolio/>
-        <Works/>
+        <Portfolio currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
+        <Works currentSlide={currentSlide} setCurrentSlide={setCurrentSlide}/>
         {/*<Testimonials/>*/}
         <Contact/>
       </div>
